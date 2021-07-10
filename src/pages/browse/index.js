@@ -8,7 +8,7 @@ const Browse = () => {
             <Title> Navegar </Title>
 
             <List>
-                <Playlist href="">
+                <Playlist to="/playlist/1">
                     <img 
                         src="https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" 
                         alt="Album cover" 
@@ -16,7 +16,7 @@ const Browse = () => {
                     <strong> TrapStar</strong>
                     <p>Novo album do Melhor rapper de todos os tempo.</p>
                 </Playlist>
-                <Playlist href="">
+                <Playlist to="/playlist/1">
                     <img 
                         src="https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" 
                         alt="Album cover" 
@@ -24,7 +24,7 @@ const Browse = () => {
                     <strong> TrapStar</strong>
                     <p>Novo album do Melhor rapper de todos os tempo.</p>
                 </Playlist>
-                <Playlist href="">
+                <Playlist to="/playlist/1">
                     <img 
                         src="https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" 
                         alt="Album cover" 
@@ -32,7 +32,7 @@ const Browse = () => {
                     <strong> TrapStar</strong>
                     <p>Novo album do Melhor rapper de todos os tempo.</p>
                 </Playlist>
-                <Playlist href="">
+                <Playlist to="/playlist/1">
                     <img 
                         src="https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" 
                         alt="Album cover" 
