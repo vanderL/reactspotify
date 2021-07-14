@@ -31,7 +31,7 @@ class Sidebar extends Component {
         <div>
           <Nav main>
             <li>
-              <a href="">Navegar</a>
+              <Link to="/">Navegar</Link>
             </li>
             <li>
               <a href="">Rádio</a>
@@ -74,7 +74,7 @@ class Sidebar extends Component {
             </li>
             {this.props.playlists.data.map(playlist => (
               <li key={playlist.id}>
-                <Link to={`playlist/${playlist.id}`}>{playlist.title}</Link>
+                <Link to={`/playlist/${playlist.id}`}>{playlist.title}</Link>
               </li>
             ))}
  
