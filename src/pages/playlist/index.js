@@ -46,7 +46,7 @@ class Playlist extends Component {
     }
 
     loadPlaylistDetails() {
-        const { id } = this. props.match.params;
+        const { id } = this.props.match.params;
 
         this.props.getPlaylistDetailsRequest(id);
     }
