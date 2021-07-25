@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Slider from 'rc-slider';
 import Sound from 'react-sound';
 import PropTypes from 'prop-types';
@@ -26,12 +26,18 @@ const Player = ({ player }) => {
             )}
 
             <Current>
-                <img src="https://i.pinimg.com/originals/8c/d6/b7/8cd6b72ff980245cd55044239c7d1e28.jpg" alt="Album cover" />
-            
-                <div>
-                    <span>RUNNING OUT OF TIME</span>
-                    <small>Tyler, The Creator</small>
-                </div>
+                {!!player.currentSong && (
+                    <Fragment>
+                        <img
+                            src={player.currentSong.thumbnail} 
+                            alt={player.currentSong.title} />
+                    
+                        <div>
+                            <span>{player.currentSong.title}</span>
+                            <small>{player.currentSong.author}</small>
+                        </div>
+                    </Fragment>    
+                )}
             </Current>
 
             <Progress>
@@ -84,6 +90,9 @@ const Player = ({ player }) => {
 Player.propTypes = {
     player: PropTypes.shape({
         currentSong: PropTypes.shape({
+            thumbnail: PropTypes.string,
+            title: PropTypes.string,
+            author: PropTypes.string,
             file: PropTypes.string,
         }),
         status: PropTypes.string,
