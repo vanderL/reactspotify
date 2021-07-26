@@ -95,7 +95,7 @@ const Player = ({ player, play, pause, next, prev, playing, position, duration, 
                     trackStyle={{background: '#fff' }}
                     handleStyle={{ display: 'none'}}
                     value={player.volume}
-                    onChange={setVolume(value)}
+                    onChange={setVolume}
                 />
             </Volume>
         </Container>
